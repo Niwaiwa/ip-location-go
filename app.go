@@ -12,7 +12,7 @@ import (
 )
 
 func get_ip_location(search_ip string) (country_code, country_name_en, country_name_jp, country_name_cn string) {
-	db, err := maxminddb.Open("./test_data/test_data/GeoIP2-Country-Test.mmdb")
+	db, err := maxminddb.Open("./test-data/test-data/GeoIP2-Country-Test.mmdb")
 	// db, err := maxminddb.Open("./static/GeoLite2-City.mmdb")
 	if err != nil {
 		log.Fatal(err)
